@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinuteMan", "MinuteMan.csproj", "{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Release|iPhone.Build.0 = Release|iPhone
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MinuteMan.csproj
+	EndGlobalSection
+EndGlobal
