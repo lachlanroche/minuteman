@@ -9,8 +9,11 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 		Debug|iPhone = Debug|iPhone
 		Release|iPhone = Release|iPhone
+		adhoc|iPhone = adhoc|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.adhoc|iPhone.ActiveCfg = adhoc|iPhone
+		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.adhoc|iPhone.Build.0 = adhoc|iPhone
 		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhone.Build.0 = Debug|iPhone
 		{B5F18C4D-1B38-4FDA-B236-919B6DBBDC30}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator

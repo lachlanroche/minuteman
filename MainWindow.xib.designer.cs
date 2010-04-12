@@ -15,12 +15,23 @@ namespace MinuteMan {
 	[MonoTouch.Foundation.Register("AppDelegate")]
 	public partial class AppDelegate {
 		
+		private MonoTouch.UIKit.UIWindow __mt_window;
+		
+		private MonoTouch.UIKit.UIImageView __mt_backdrop;
+		
+		private MonoTouch.UIKit.UIScrollView __mt_scrollView;
+		
+		private MonoTouch.UIKit.UIPageControl __mt_pager;
+		
+		#pragma warning disable 0169
 		[MonoTouch.Foundation.Connect("window")]
 		private MonoTouch.UIKit.UIWindow window {
 			get {
-				return ((MonoTouch.UIKit.UIWindow)(this.GetNativeField("window")));
+				this.__mt_window = ((MonoTouch.UIKit.UIWindow)(this.GetNativeField("window")));
+				return this.__mt_window;
 			}
 			set {
+				this.__mt_window = value;
 				this.SetNativeField("window", value);
 			}
 		}
@@ -28,9 +39,11 @@ namespace MinuteMan {
 		[MonoTouch.Foundation.Connect("backdrop")]
 		private MonoTouch.UIKit.UIImageView backdrop {
 			get {
-				return ((MonoTouch.UIKit.UIImageView)(this.GetNativeField("backdrop")));
+				this.__mt_backdrop = ((MonoTouch.UIKit.UIImageView)(this.GetNativeField("backdrop")));
+				return this.__mt_backdrop;
 			}
 			set {
+				this.__mt_backdrop = value;
 				this.SetNativeField("backdrop", value);
 			}
 		}
@@ -38,9 +51,11 @@ namespace MinuteMan {
 		[MonoTouch.Foundation.Connect("scrollView")]
 		private MonoTouch.UIKit.UIScrollView scrollView {
 			get {
-				return ((MonoTouch.UIKit.UIScrollView)(this.GetNativeField("scrollView")));
+				this.__mt_scrollView = ((MonoTouch.UIKit.UIScrollView)(this.GetNativeField("scrollView")));
+				return this.__mt_scrollView;
 			}
 			set {
+				this.__mt_scrollView = value;
 				this.SetNativeField("scrollView", value);
 			}
 		}
@@ -48,9 +63,11 @@ namespace MinuteMan {
 		[MonoTouch.Foundation.Connect("pager")]
 		private MonoTouch.UIKit.UIPageControl pager {
 			get {
-				return ((MonoTouch.UIKit.UIPageControl)(this.GetNativeField("pager")));
+				this.__mt_pager = ((MonoTouch.UIKit.UIPageControl)(this.GetNativeField("pager")));
+				return this.__mt_pager;
 			}
 			set {
+				this.__mt_pager = value;
 				this.SetNativeField("pager", value);
 			}
 		}

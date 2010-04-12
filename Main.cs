@@ -99,7 +99,7 @@ namespace MinuteMan
 		
 		DateTime start_t = DateTime.MinValue;
 		int cost = 120;
-		int people = 29;
+		int people = 2;
 		bool is_running;
 		
 		void StartMeeting( object sender, EventArgs e )
@@ -107,7 +107,7 @@ namespace MinuteMan
 			is_running = !is_running;
 			// startButton.SetTitle( is_running ? "Stop" : "Start", UIControlState.Normal );
 			if (is_running) {
-				start_t = DateTime.Now.AddMinutes( -125 );
+				start_t = DateTime.Now; //.AddMinutes( -125 );
 			}
 		}
 		
@@ -115,13 +115,18 @@ namespace MinuteMan
 		{
 			TimeSpan t = DateTime.Now - start_t;
 			string format = "{0:00}:{1:00}:{2:00}.{3:0}";
+			/*
 			if (t.Hours == 0 && t.Minutes == 0) {
 				format = "{2:0}.{3:0}";
 			} else if (t.Hours == 0) {
 				format = "{1:0}:{2:00}.{3:0}";
 			}
+			*/
+			if (t.Hours == 0) {
+				format = "{1:0}:{2:00}.{3:0}";
+			}
 			timeLabel.Text = string.Format( format, t.Hours, t.Minutes, t.Seconds, t.Milliseconds/100 );
-			costLabel.Text = string.Format("$ {0:0.00}", cost * t.TotalHours * people );
+			costLabel.Text = string.Format("${0:0.00}", cost * t.TotalHours * people );
 		}
 			   
 		[Export("UpdateTimer")]
