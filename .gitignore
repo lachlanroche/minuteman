@@ -1,4 +1,25 @@
+#
+# emacs backups and temp files
+#
+\#*
+*~
+
+#
+# monotouch artigacts
+#
 bin
+*.userprefs
+*.pidb
+*.csproj.test-cache
+
+#
+# dreamweaver/photoshop
+#
 .DS_Store
-.*~.*
-MinuteMan.userprefs
+Thumbs.db
+
+#
+# packaging
+#
+Payload
+ace-relayphone.ipa
